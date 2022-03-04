@@ -1,4 +1,25 @@
-hello world
-file.txt
-file.txt
-branch newer2
+[2022-03-04]
+-- local branch process --
+# create new branch: main
+git branch main
+# switch branch to main
+git checkout main
+# merge branch
+git merge newer2
+
+-- add remote repo --
+# link remot repo using name: origin
+git remote origin https://github.com/caojianqu/demo.git
+# show remote repo
+git remote -v
+
+--- set defult branch: main ---
+# del local branch 
+git branch -d newer2
+git branch -d master
+#del remore branch
+git push -d origin newer2
+git push -d origin master
+
+
+
